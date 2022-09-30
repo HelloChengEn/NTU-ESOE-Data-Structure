@@ -9,29 +9,35 @@ using namespace std;
 int main()
 {
     int a = 5869; int b = 3053; int c = 104395302;
-    int d = 4;
 
-    int* res = showPrime(a);
-    cout << res[0] << ',' << res[1];
+    int* res = showPrime(c);
+    //int* res1 = showPrime(b);
+    cout << res[0] << ',' << res[1] << endl;
+    //cout << res1[0] << ',' << res1[1];
 
     return 0;
 }
 
+
 int* showPrime(int p)
 {
-    int result[2]; int i;
+    int i;
+    /*  this pointer need to declar in heap so that it can return to main() 
+        use 'new' to declar in heap */ 
+    int *result = new int[2]; 
 
-    cout << "Input number is: " << p << endl;
+
+    //cout << "Input number is: " << p << endl;
 
     /* if is prime print: p, 0
        else print: prevPrime, nextPrime */
     if (isPrime(p)) {
-        cout << "Input number is prime" << endl;
+        //cout << "Input number is prime" << endl;
         result[0] = p; result[1] = 0;
     }
     else {
-        cout << "Input number is not prime" << endl;
-        int* result = findPrime(p);
+        //cout << "Input number is not prime" << endl;
+        result = findPrime(p);
         //cout << result[0] << ' ' << result[1] << endl;
     }
 
@@ -51,12 +57,12 @@ bool isPrime(int p)
 
 int* findPrime(int p)
 {
-    int res[2]; 
+    int *res = new int[2]; 
     int* prevPrime;
     prevPrime = new int[p + 1];
     int nextPrime = p;
 
-    cout << "In findPrime()" << endl;
+    //cout << "In findPrime()" << endl;
     
     /*  Method to find prev prime number
         Sieve of Eratosthenes */
@@ -98,8 +104,8 @@ int* findPrime(int p)
     }
     res[1] = nextPrime;
 
-    cout << "the pl, pr number is: " << res[0] << "," << res[1] << endl;
-    cout << "leave findPrime()" << endl;
+    //cout << "the pl, pr number is: " << res[0] << "," << res[1] << endl;
+    //cout << "leave findPrime()" << endl;
 
     return res;
 }

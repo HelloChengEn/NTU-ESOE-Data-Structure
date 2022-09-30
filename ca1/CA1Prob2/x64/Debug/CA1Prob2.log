@@ -1,5 +1,3 @@
 ﻿  CA1Prob2.cpp
-D:\ChengEn\NTU_Learning\111_1_DataStructure\NTU-ESOE-Data-Structure\ca1\CA1Prob2\CA1Prob2.cpp(22,24): warning C4101: 'i': 未參考的區域變數
-D:\ChengEn\NTU_Learning\111_1_DataStructure\NTU-ESOE-Data-Structure\ca1\CA1Prob2\CA1Prob2.cpp(38): warning C4172: 傳回區域變數或暫存的位址: result
-D:\ChengEn\NTU_Learning\111_1_DataStructure\NTU-ESOE-Data-Structure\ca1\CA1Prob2\CA1Prob2.cpp(104): warning C4172: 傳回區域變數或暫存的位址: res
+D:\ChengEn\NTU_Learning\111_1_DataStructure\NTU-ESOE-Data-Structure\ca1\CA1Prob2\CA1Prob2.cpp(25,9): warning C4101: 'i': 未參考的區域變數
   CA1Prob2.vcxproj -> D:\ChengEn\NTU_Learning\111_1_DataStructure\NTU-ESOE-Data-Structure\ca1\x64\Debug\CA1Prob2.exe
