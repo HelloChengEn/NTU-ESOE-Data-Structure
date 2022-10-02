@@ -22,7 +22,9 @@ public:
 	double getPrice(); // Return the price of the flower.
 };
 
+
 flower::flower(string n, int pt, double pr) {
+	cout << "do here";
 	name = n;
 	petal = pt;
 	price = pr;
@@ -55,6 +57,9 @@ int main() {
 	cout << flower1.getName() << ',' << flower1.getPetal() << ',' << flower1.getPrice() << endl;
 	cout << flower2.getName() << ',' << flower2.getPetal() << ',' << flower2.getPrice() << endl;
 	cout << flower3.getName() << ',' << flower3.getPetal() << ',' << flower3.getPrice() << endl;
+
+	flower1.setPetal(6);
+	cout << flower1.getName() << ',' << flower1.getPetal() << ',' << flower1.getPrice() << endl;
 
 	return 0;
 }
